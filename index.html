@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpStacks — IT-Ops Tools Catalog</title>
+<style>
+  :root {
+    --bg: #0d1117;
+    --panel: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-strong: #2f81f7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+  }
+  header {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 64px 24px 32px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2.25rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.02em;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 1.05rem;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 24px 64px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+  }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+  .card h2 {
+    margin: 0 0 6px;
+    font-size: 1.3rem;
+  }
+  .price {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+  }
+  .card p.desc {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin: 0 0 16px;
+    flex-grow: 1;
+  }
+  .card ul {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 20px;
+    padding-left: 18px;
+  }
+  .card ul li { margin-bottom: 4px; }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: auto;
+  }
+  .btn {
+    display: inline-block;
+    text-align: center;
+    background: var(--accent-strong);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+  .btn:hover { background: var(--accent); }
+  .btn.secondary {
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .btn.secondary:hover { border-color: var(--accent); color: var(--accent); }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>OpStacks</h1>
+  <p>IT-ops guidance and tools for sysadmins, security engineers, and MSPs. Browse the catalog below — each product links straight to checkout.</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>ClarityOps</h2>
+    <div class="price">$99 one-time</div>
+    <p class="desc">Browser-based vulnerability scan report generator. Converts Tenable, Qualys, and Microsoft Defender exports into executive-ready PDF/HTML reports, with built-in CISA KEV and EPSS threat-intel enrichment.</p>
+    <ul>
+      <li>Fully offline, single-file HTML app</li>
+      <li>CISA KEV &amp; EPSS enrichment built in</li>
+      <li>Unlimited clients, white-label included</li>
+    </ul>
+    <div class="buttons">
+      <a class="btn" href="https://opstacks.gumroad.com/l/wvobi">Buy on Gumroad</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>RemedyOps</h2>
+    <div class="price">From $129</div>
+    <p class="desc">GitHub-native vulnerability remediation tracker. Runs your remediation program on GitHub Issues + Projects and ingests findings from Defender, Tenable, Qualys, Rapid7, and OpenVAS.</p>
+    <ul>
+      <li>Full severity / SLA / compliance label taxonomy</li>
+      <li>Automated scanner CSV ingest &amp; SLA sweeper</li>
+      <li>Solo, Pro, and MSP-Agency tiers available</li>
+    </ul>
+    <div class="buttons">
+      <a class="btn" href="https://opstacks.gumroad.com/l/pzrrr">Buy on Gumroad</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Azure Arc Onboarding Pack</h2>
+    <div class="price">$19 one-time</div>
+    <p class="desc">Onboarding checklists and command-by-command scripts (PowerShell for Windows Server, Bash for Linux) for projecting servers into Azure Arc-enabled machines.</p>
+    <ul>
+      <li>Step-by-step Windows &amp; Linux checklists</li>
+      <li>Ready-to-run PowerShell and Bash scripts</li>
+      <li>Command syntax verified against Microsoft Learn</li>
+    </ul>
+    <div class="buttons">
+      <a class="btn" href="https://opstacks.gumroad.com/l/hlxwwe">Buy the Onboarding Checklist</a>
+      <a class="btn secondary" href="https://opstacks.gumroad.com/l/qkybzi">Buy the Script Guide</a>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  <p>OpStacks &middot; IT-ops guidance &amp; tools &middot; <a href="mailto:opstacks@outlook.com">opstacks@outlook.com</a></p>
+</footer>
+
+</body>
+</html>
