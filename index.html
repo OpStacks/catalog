@@ -103,6 +103,29 @@
     color: var(--text);
   }
   .btn.secondary:hover { border-color: var(--accent); color: var(--accent); }
+  .card.featured {
+    border-color: var(--accent-strong);
+    position: relative;
+  }
+  .badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--accent-strong);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    border-radius: 999px;
+  }
+  .strike {
+    color: var(--muted);
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-right: 6px;
+  }
   footer {
     border-top: 1px solid var(--border);
     padding: 32px 24px;
@@ -125,7 +148,7 @@
 
   <div class="card">
     <h2>ClarityOps</h2>
-    <div class="price">$99 one-time</div>
+    <div class="price">$149.99 one-time</div>
     <p class="desc">Browser-based vulnerability scan report generator. Converts Tenable, Qualys, and Microsoft Defender exports into executive-ready PDF/HTML reports, with built-in CISA KEV and EPSS threat-intel enrichment.</p>
     <ul>
       <li>Fully offline, single-file HTML app</li>
@@ -139,7 +162,7 @@
 
   <div class="card">
     <h2>RemedyOps</h2>
-    <div class="price">From $129</div>
+    <div class="price">From $129.99</div>
     <p class="desc">GitHub-native vulnerability remediation tracker. Runs your remediation program on GitHub Issues + Projects and ingests findings from Defender, Tenable, Qualys, Rapid7, and OpenVAS.</p>
     <ul>
       <li>Full severity / SLA / compliance label taxonomy</li>
@@ -151,18 +174,46 @@
     </div>
   </div>
 
-  <div class="card">
+  <div class="card featured">
+    <span class="badge">Best value</span>
     <h2>Azure Arc Onboarding Pack</h2>
-    <div class="price">$19 one-time</div>
-    <p class="desc">Onboarding checklists and command-by-command scripts (PowerShell for Windows Server, Bash for Linux) for projecting servers into Azure Arc-enabled machines.</p>
+    <div class="price"><span class="strike">$32.98</span>$23.99 one-time</div>
+    <p class="desc">The Azure Arc Onboarding Checklist and Script Guide together, bundled and discounted. Everything you need to onboard a server to Azure Arc, for Windows Server or Linux.</p>
     <ul>
-      <li>Step-by-step Windows &amp; Linux checklists</li>
-      <li>Ready-to-run PowerShell and Bash scripts</li>
-      <li>Command syntax verified against Microsoft Learn</li>
+      <li>Gated, audit-ready onboarding checklist</li>
+      <li>Command-by-command script guide</li>
+      <li>Save over 25% vs. buying separately</li>
     </ul>
     <div class="buttons">
-      <a class="btn" href="https://opstacks.gumroad.com/l/hlxwwe">Buy the Onboarding Checklist</a>
-      <a class="btn secondary" href="https://opstacks.gumroad.com/l/qkybzi">Buy the Script Guide</a>
+      <a class="btn" href="https://opstacks.gumroad.com/l/btziwb">Buy the Pack</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Azure Arc Onboarding Checklist</h2>
+    <div class="price">$12.99 one-time</div>
+    <p class="desc">The gated, audit-ready checklist for onboarding a server to Azure Arc: prerequisites, network, install, validation, and sign-off. Pick Windows or Linux at checkout.</p>
+    <ul>
+      <li>Step-by-step Windows &amp; Linux checklists</li>
+      <li>Machine &amp; deployment record for your files</li>
+      <li>References Microsoft Learn throughout</li>
+    </ul>
+    <div class="buttons">
+      <a class="btn" href="https://opstacks.gumroad.com/l/hlxwwe">Buy on Gumroad</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Azure Arc Onboarding Script Guide</h2>
+    <div class="price">$19.99 one-time</div>
+    <p class="desc">A command-by-command onboarding reference: every step in Bash or PowerShell, plus a complete parameterized onboarding script you can adapt. Pick Windows or Linux at checkout.</p>
+    <ul>
+      <li>Ready-to-run PowerShell and Bash scripts</li>
+      <li>Command syntax verified against Microsoft Learn</li>
+      <li>Includes a full parameterized script (Appendix A)</li>
+    </ul>
+    <div class="buttons">
+      <a class="btn" href="https://opstacks.gumroad.com/l/qkybzi">Buy on Gumroad</a>
     </div>
   </div>
 
